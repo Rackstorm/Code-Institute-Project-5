@@ -206,6 +206,31 @@ By aligning these data visualization and machine learning tasks with the identif
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 6. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
+### Languages
+
+Python
+
+### Frameworks and Other Technologies
+
+- **Git:**
+
+  - A distributed version control system that tracks changes in source code during software development.
+
+- **GitHub:**
+
+  - A web-based platform for version control using Git, facilitating collaborative software development and hosting repositories.
+
+- **Heroku:**
+
+  - A cloud platform that enables developers to deploy, manage, and scale applications effortlessly.
+
+- **CodeAnywhere:**
+
+  - An online development environment that allows coding from anywhere, offering collaboration features and support for multiple programming languages.
+
+- **Jupyter:**
+  - An open-source web application that allows the creation and sharing of live code, equations, visualizations, and narrative text in a single, interactive document.
+
 ## Main Data Analysis and Machine Learning Libraries
 
 - **NumPy**
