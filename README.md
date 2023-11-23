@@ -257,6 +257,7 @@ By aligning these data visualization and machine learning tasks with the identif
 - [Mildew Detection by Albin Hall](https://github.com/AlbinHall/mildew-detection)
 - [Mildew Detection by ssreelakshmi8](https://github.com/ssreelakshmi88/mildew-detection-cherry-leaves_milestonePP5)
 - [Mildew Detection by olleholmgren 9](https://github.com/olleholmgren/mildew-detection)
+- [Mildew Detection by Eric Jones](https://github.com/ericjonesdev/milestone-project-cherry-leaves-mildew-detection/)
 
 ### Content
 
