@@ -66,16 +66,110 @@ To save time in this process, the IT team suggested an ML system that detects in
 * 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
 
-## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them).
+## Hypothesis
+We hypothesize that cherry leaves infected with powdery mildew exhibit noticeable visual contrasts when compared to healthy leaves. This distinction can potentially be captured through image analysis, allowing for the development of an effective machine learning model.
+
+## How to Validate
+To validate our hypothesis, we propose conducting an average image study using the dataset provided by Farmy & Foods. This study will involve a comprehensive analysis of cherry leaf images, aiming to identify distinctive visual patterns associated with powdery mildew infection. The outcome of this study will guide the development and training of a machine learning system capable of instantaneously detecting the presence of powdery mildew in cherry leaves. The success of the model will be measured against its accuracy in distinguishing between healthy and infected leaves, with the ultimate goal of streamlining the current manual verification process and providing a scalable solution for Farmy & Foods.
 
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+## The Rationale to Map Business Requirements to Data Visualizations and ML Tasks
+
+### Business Requirements
+
+#### Data Visualization
+
+1. **Display "mean" and "standard deviation" images:**
+   * **Rationale:** Provides a visual representation of the statistical measures for both mildewed and healthy cherry leaves, aiding in understanding the variation in pixel values and patterns.
+
+2. **Display the difference between average mildewed and uninfected leaves:**
+   * **Rationale:** Offers a visual comparison, allowing for a clear distinction between the characteristics of mildewed and healthy leaves, aiding in the identification of key features.
+
+3. **Display an image montage for mildewed or uninfected leaves:**
+   * **Rationale:** Creates a comprehensive visual overview, facilitating easy differentiation between mildewed and healthy cherry leaves in a montage format.
+
+#### Classification
+
+4. **Predict if a leaf is infected with powdery mildew:**
+   * **Rationale:** Enables quick identification of infected leaves, contributing to efficient decision-making in cherry tree crop management.
+
+5. **Build a binary classifier and generate reports:**
+   * **Rationale:** Provides a structured approach to classification, with the added benefit of generating detailed reports for analysis and documentation.
+
+### Data Visualization Tasks
+
+* **Mean and Standard Deviation Visualization:**
+  * **Objective:** Showcase statistical values for healthy and mildewed cherry leaf images.
+  * **Benefit:** Enables clients to visually distinguish between the two types of leaves based on statistical measures.
+
+* **Comparison Visualization:**
+  * **Objective:** Illustrate distinctions between a typical healthy cherry leaf and one infected by powdery mildew.
+  * **Benefit:** Provides a clear visual reference for differentiation, aiding in identification of key visual features.
+
+* **Montage Visualization:**
+  * **Objective:** Create a visual montage featuring both healthy and infected cherry leaves.
+  * **Benefit:** Facilitates an overall understanding by presenting a comprehensive visual summary of the different leaf conditions.
+
+### ML Classification Tasks
+
+* **Prediction Capability:**
+  * **Objective:** Develop a model to predict whether a given leaf is healthy or infected.
+  * **Benefit:** Offers clients a quick and automated method for leaf classification.
+
+* **Machine Learning Model App:**
+  * **Objective:** Provide clients with an intuitive application for predicting leaf health.
+  * **Benefit:** Enhances user experience by simplifying the prediction process through a user-friendly application.
+
+By aligning these data visualization and machine learning tasks with the identified business requirements, we aim to deliver a solution that not only meets but exceeds the expectations of the client, providing valuable insights and efficient decision-making tools for managing cherry tree crops effectively.
+
 
 
 ## ML Business Case
-* In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+
+### Overview:
+- Development of MildewCherryLeavesCLF, a binary classification model.
+- Goal: Predict presence of powdery mildew on cherry leaves.
+- Revolutionize diagnostic process for Farmy & Foods' cherry tree crops.
+
+### Objectives:
+1. **Accuracy Target:**
+   - Achieve 97% accuracy or above on the model's test set.
+
+2. **Diagnostic Enhancement:**
+   - Provide a faster and more reliable diagnostic tool.
+   - Eliminate labor-intensive manual inspections (currently 30 minutes per tree).
+
+### Model Details:
+- **Model Type:**
+  - Supervised, 2-class, single-label classification model.
+
+- **Output:**
+  - Binary flag: Infected or not.
+  - Probability of infection.
+
+- **Workflow:**
+  - Botanical staff conduct visual inspections and upload leaf images to the app.
+  - On-the-fly predictions enable real-time decision-making.
+
+### Training Data:
+- **Source:**
+  - Subset of 2208 images from provided dataset.
+
+- **Features:**
+  - All images serve as features.
+
+- **Target:**
+  - Binary classification: Infected or not.
+
+### Rationale:
+- **Current Challenges:**
+  - Manual inspection is time-consuming.
+  - Prone to human error.
+  - Specific facilities lack staff and expertise for effective fungal detection.
+
+### Conclusion:
+- MildewCherryLeavesCLF aims to enhance efficiency and accuracy in diagnosing powdery mildew. Streamlining diagnostics for Farmy & Foods and paving the way for scalable solutions across diverse crops.
+
 
 
 ## Dashboard Design
