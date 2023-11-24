@@ -32,4 +32,4 @@ def page_summary_body():
 
     st.write(
         f"For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/ericjonesdev/milestone-project-cherry-leaves-mildew-detection.git).")
+        f"[Project README file](https://github.com/Rackstorm/Code-Institute-Project-5).")
