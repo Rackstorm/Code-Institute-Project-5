@@ -14,7 +14,7 @@ def plot_predictions_probabilities(pred_proba, pred_class):
 
     prob_per_class = pd.DataFrame(
         data=[0, 0],
-        index={'Mildew Infected': 1, 'Healthy': 0}.keys(),
+        index={'infected': 1, 'uninfected': 0}.keys(),
         columns=['Probability']
     )
     prob_per_class.loc[pred_class] = pred_proba
@@ -28,7 +28,7 @@ def plot_predictions_probabilities(pred_proba, pred_class):
         prob_per_class,
         x='Diagnostic',
         y=prob_per_class['Probability'],
-        range_y=[1, 0],
+        range_y=[0, 1],
         width=600, height=300, template='seaborn')
     st.plotly_chart(fig)
 
@@ -37,8 +37,8 @@ def resize_input_image(img, version):
     """
     Reshape image to average image size
     """
-    image_shape = load_pkl_file(file_path=f"output/{version}/image_shape.pkl")
-    img_resized = img.resize((image_shape[1], image_shape[0]), Image.ANTIALIAS)
+    image_shape = load_pkl_file(file_path=f"outputs/{version}/image_shape.pkl")
+    img_resized = img.resize((image_shape[1], image_shape[0]), Image.LANCZOS)
     my_image = np.expand_dims(img_resized, axis=0)/255
 
     return my_image
@@ -49,18 +49,18 @@ def load_model_and_predict(my_image, version):
     Load and perform ML prediction over live images
     """
 
-    model = load_model(f"output/{version}/mildew_detection_model.h5")
+    model = load_model(
+        f"outputs/{version}/mildew_detection_model.h5")
 
     pred_proba = model.predict(my_image)[0, 0]
 
-    target_map = {v: k for k, v in {
-        'Mildew Infected': 1, 'Healthy': 0}.items()}
+    target_map = {v: k for k, v in {'infected': 1, 'uninfected': 0}.items()}
     pred_class = target_map[pred_proba > 0.5]
     if pred_class == target_map[0]:
         pred_proba = 1 - pred_proba
 
     st.write(
-        f"The predictive analysis indicates the sample leaf is "
+        f"The predictive analysis indicates the sample cell is "
         f"**{pred_class.lower()}**.")
 
     return pred_proba, pred_class
