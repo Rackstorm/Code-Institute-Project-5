@@ -6,7 +6,7 @@
 /jupyter_notebooks
 *.ipynb
 README.md
-workspaces/Code-Institute-Project-5/inputs/mildew_dataset/cherry-leaves/train/*
-workspaces/Code-Institute-Project-5/inputs/mildew_dataset/cherry-leaves/test/*
-workspaces/Code-Institute-Project-5/inputs/mildew_dataset/cherry-leaves/healthy
-workspaces/Code-Institute-Project-5/inputs/mildew_dataset/cherry-leaves/powdery_mildew
+inputs/mildew_dataset/cherry-leaves/train/*
+inputs/mildew_dataset/cherry-leaves/test/*
+inputs/mildew_dataset/cherry-leaves/healthy
+inputs/mildew_dataset/cherry-leaves/powdery_mildew
