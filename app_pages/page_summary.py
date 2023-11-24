@@ -8,28 +8,24 @@ def page_summary_body():
 
     st.info(
         f"**General Information**\n"
-        f"* Powdery mildew is a fungal infection sometimes experienced by cherry"
-        f"trees. It is transmitted via airborne spoars"
-        f"Controlling powdery mildew often involves a combination of cultural"
-        f"practices, such as pruning to improve air circulation, and fungicide"
-        f"applications. Selecting cherry varieties with resistance to powdery"
-        f"mildew can also help prevent infection.")
+        f"* Powdery mildew, a fungal infection sometimes affecting cherry trees, is transmitted via airborne spores. "
+        f"Effective control measures often include cultural practices, such as pruning to enhance air circulation, "
+        f"and the application of fungicides. Additionally, selecting cherry varieties resistant to powdery mildew can aid in prevention."
+    )
 
     st.warning(
         f"**Cherry Leaves Dataset**\n\n"
-        f"\n The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves).\n"
-        f"The dataset contains 2104 healthy leaves and 2104 affected leaves. "
-        f"The images dataset has been split evenly between "
-        f" powdery mildew-infected and uninfected/health cherry leaves.")
+        f"\n The dataset is obtained from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves).\n"
+        f"With an even distribution, the dataset comprises 2104 healthy leaves and 2104 leaves affected by powdery mildew."
+        f" The goal is to visually differentiate between the two categories of cherry leaves."
+    )
 
     st.success(
-        f"The project has 2 business requirements:\n"
-        f"* 1 - The client is interested in having a study to differentiate "
-        f"infected and uninfected cherry leaves visually.\n"
-        f"* 2 - The client is interested in telling whether a given leaf"
-        f" contains mildew or not. "
+        f"The project encompasses two key business requirements:\n"
+        f"* 1 - Conduct a study to visually distinguish between infected and uninfected cherry leaves.\n"
+        f"* 2 - Develop a model to determine whether a given leaf contains powdery mildew or not."
     )
 
     st.write(
-        f"For additional information, please visit and **read** the "
+        f"For further details, please visit and **read** the "
         f"[Project README file](https://github.com/Rackstorm/Code-Institute-Project-5).")
