@@ -1,59 +1,53 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Cherry Leaf Mildew Detector
 
-## Codeanywhere Template Instructions
+## Code Institute Project 5
 
-Welcome,
+The Mildew Detector is a machine learning model designed to identify and classify cherry leaves based on their health status, specifically distinguishing between leaves infected with powdery mildew and those that are healthy. The development of this detector follows a systematic approach, incorporating various stages from data collection to model evaluation.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+# About the project
 
-You can safely delete the Codeanywhere Template Instructions section of this README.md file, and modify the remaining paragraphs for your own project. Please do read the Codeanywhere Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+## 1. Data Collection
 
-## How to use this repo
+- The dataset comprises images of cherry leaves collected from Farmy & Foods' cherry tree crops.
+- Two classes exist: healthy leaves and leaves infected with powdery mildew.
+- The dataset underwent augmentation to ensure sufficient image diversity for robust model training.
 
-1. Use this template to create your GitHub project repo
+## 2. Model Architecture
 
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
+- The machine learning model is built using a Convolutional Neural Network (CNN).
+- The CNN architecture includes convolutional layers, max-pooling layers, and dense layers, suitable for image classification tasks.
 
-1. On your Dashboard, click on the New Workspace button
+## 3. Training and Evaluation
 
-1. Paste in the URL you copied from GitHub earlier
+- The model was trained on the augmented dataset, with an emphasis on achieving a high level of accuracy.
+- Training involved optimizing the model using the Adam optimizer and binary cross-entropy loss function.
+- Early stopping was implemented to prevent overfitting during the training process.
 
-1. Click Create
+## 4. Model Performance
 
-1. Wait for the workspace to open. This can take a few minutes.
+- The model's performance was evaluated using a separate test set.
+- Evaluation metrics, including loss and accuracy, were monitored to ensure the model met the desired criteria.
 
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
+## 5. Dashboard Interface
 
-1. In the terminal type <code>pip3 install jupyter</code>
+- Next steps involve fulfilling the business requirement for a dashboard interface.
+- The interface will provide a user-friendly platform for uploading images, making predictions, and visualizing model outputs.
 
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
+## 6. Conclusion
 
-1. Open port 8888 preview or browser
+- The Mildew Detector successfully aligns with the business objective of providing a swift and reliable diagnostic tool for detecting powdery mildew in cherry trees.
+- The model and its evaluation are saved for future use, and the project is poised to move into the dashboard development phase.
 
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
+The Mildew Detector addresses the practical need for an automated and efficient solution in agriculture, enhancing the diagnosis of plant diseases and contributing to effective crop management.
 
-1. Click the button Not Trusted and choose Trust.
+[!Mockup](../assets/mockup.png)
 
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
-## Cloud IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
-## Dataset Content
+# Dataset Content
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 - The dataset contains +4 thousand images taken from the client's crop fields. The images show healthy cherry leaves and cherry leaves that have powdery mildew, a fungal disease that affects many plant species. The cherry plantation crop is one of the finest products in their portfolio, and the company is concerned about supplying the market with a compromised quality product.
 
-## Business Requirements
+# Business Requirements
 
 The cherry plantation crop from Farmy & Foods is facing a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is manual verification if a given cherry tree contains powdery mildew. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and verifying visually if the leaf tree is healthy or has powdery mildew. If there is powdery mildew, the employee applies a specific compound to kill the fungus. The time spent applying this compound is 1 minute. The company has thousands of cherry trees, located on multiple farms across the country. As a result, this manual process is not scalable due to the time spent in the manual process inspection.
 
@@ -62,7 +56,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 - 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-## Hypothesis
+# Hypothesis
 
 We hypothesize that cherry leaves infected with powdery mildew exhibit noticeable visual contrasts when compared to healthy leaves. This distinction can potentially be captured through image analysis, allowing for the development of an effective machine learning model.
 
@@ -195,7 +189,7 @@ By aligning these data visualization and machine learning tasks with the identif
 
 ### Heroku
 
-- The App live link is: https://YOUR_APP_NAME.herokuapp.com/
+- The App live link is: <https://code-project-5-85f1703f62ff.herokuapp.com/>
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
