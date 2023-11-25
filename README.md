@@ -191,6 +191,8 @@ Powdery mildew, caused by Podosphaera clandestina, impacts cherry trees, resulti
 1. The client seeks a study to visually differentiate between a healthy cherry leaf and one with powdery mildew.
 2. The client is interested in predicting whether a cherry leaf is healthy or contains powdery mildew.
 
+![Mockup](assets/summary.png)
+
 ## Page 2: Leaf Visualizer
 
 **Business requirement 1:**
@@ -209,19 +211,27 @@ The client aims to visually differentiate between a healthy cherry leaf and one 
    - A drop-down menu for labels (healthy and powdery).
    - A button to create an image montage with one of the labels.
 
+![Mockup](assets/visualizer.png)
+
 ## Page 3: Mildew Detection
 
 **Business requirement 2:**
 
 The client seeks to visually differentiate if a given leaf contains mildew or not. Users can upload an image to validate its health status. The interface promptly displays the uploaded image along with a statement predicting the leaf's health status, providing a probability prediction and an analysis report available for download via a link labeled 'Download Report.'
 
+![Mockup](assets/detection.png)
+
 ## Page 4: Project Hypothesis and Validation
 
 The page outlines the project's hypothesis, emphasizing that leaves infected by powdery mildew exhibit distinct visible markings. A trained machine learning model, with an accuracy of 95%, validates this distinction by comparing healthy and powdery mildew-infected cherry leaves.
 
+![Mockup](assets/hypothesis.png)
+
 ## Page 5: ML Performance Metrics
 
 A bar plot visualizes the distribution of two labels across three sets: Train, Validation, and Test. The dataset contains 2104 healthy leaves and 2104 infected leaves, split into training, validation, and test sets. Model history graphs, including training accuracy and losses, showcase the general performance on the test set.
+
+![Mockup](assets/performance.png)
 
 # Bugs
 
