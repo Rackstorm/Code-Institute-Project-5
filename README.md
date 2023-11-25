@@ -40,7 +40,7 @@ The Mildew Detector is a machine learning model designed to identify and classif
 
 The Mildew Detector addresses the practical need for an automated and efficient solution in agriculture, enhancing the diagnosis of plant diseases and contributing to effective crop management.
 
-[!Mockup](/assets/mockup.png)
+![Mockup](/assets/mockup.png)
 
 # Dataset Content
 
