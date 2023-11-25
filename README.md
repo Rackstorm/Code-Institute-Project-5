@@ -4,6 +4,8 @@
 
 The Mildew Detector is a machine learning model designed to identify and classify cherry leaves based on their health status, specifically distinguishing between leaves infected with powdery mildew and those that are healthy. The development of this detector follows a systematic approach, incorporating various stages from data collection to model evaluation.
 
+![Mockup](assets/mockup.png)
+
 # About the project
 
 ## 1. Data Collection
@@ -39,8 +41,6 @@ The Mildew Detector is a machine learning model designed to identify and classif
 - The model and its evaluation are saved for future use, and the project is poised to move into the dashboard development phase.
 
 The Mildew Detector addresses the practical need for an automated and efficient solution in agriculture, enhancing the diagnosis of plant diseases and contributing to effective crop management.
-
-![Mockup](/assets/mockup.png)
 
 # Dataset Content
 
