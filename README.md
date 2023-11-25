@@ -121,13 +121,13 @@ By aligning these data visualization and machine learning tasks with the identif
 
 ## ML Business Case
 
-### Overview:
+### Overview
 
 - Development of MildewCherryLeavesCLF, a binary classification model.
 - Goal: Predict presence of powdery mildew on cherry leaves.
 - Revolutionize diagnostic process for Farmy & Foods' cherry tree crops.
 
-### Objectives:
+### Objectives
 
 1. **Accuracy Target:**
 
@@ -137,7 +137,7 @@ By aligning these data visualization and machine learning tasks with the identif
    - Provide a faster and more reliable diagnostic tool.
    - Eliminate labor-intensive manual inspections (currently 30 minutes per tree).
 
-### Model Details:
+### Model Details
 
 - **Model Type:**
 
@@ -152,7 +152,7 @@ By aligning these data visualization and machine learning tasks with the identif
   - Botanical staff conduct visual inspections and upload leaf images to the app.
   - On-the-fly predictions enable real-time decision-making.
 
-### Training Data:
+### Training Data
 
 - **Source:**
 
@@ -165,14 +165,14 @@ By aligning these data visualization and machine learning tasks with the identif
 - **Target:**
   - Binary classification: Infected or not.
 
-### Rationale:
+### Rationale
 
 - **Current Challenges:**
   - Manual inspection is time-consuming.
   - Prone to human error.
   - Specific facilities lack staff and expertise for effective fungal detection.
 
-### Conclusion:
+### Conclusion
 
 - MildewCherryLeavesCLF aims to enhance efficiency and accuracy in diagnosing powdery mildew. Streamlining diagnostics for Farmy & Foods and paving the way for scalable solutions across diverse crops.
 
@@ -184,7 +184,7 @@ The project pages are structured as follows:
 
 ## Page 1: Quick Project Summary
 
-**Summary**
+### Summary
 
 Powdery mildew, caused by Podosphaera clandestina, impacts cherry trees, resulting in white powdery spots on leaves and stems, especially lower leaves. Flourishing in high humidity and moderate temperatures, it poses a threat to plants, causing significant damage and reducing harvest yields. The project addresses two business requirements:
 
@@ -247,7 +247,7 @@ None.
 
 ### Heroku
 
-- The App live link is: <https://code-project-5-85f1703f62ff.herokuapp.com/>
+- The App live link is: <https://code-project-5-85f1703f62ff.herokuapp.com>
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
