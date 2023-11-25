@@ -31,5 +31,5 @@ def page_project_hypothesis_body():
 
         f"* The ML pipeline's performance was evaluated, and it successfully differentiates "
         f"between a healthy leaf and an infected leaf "
-        f"with a minimum accuracy of 97%.\n\n"
+        f"with a minimum accuracy of 95%.\n\n"
     )
