@@ -40,7 +40,7 @@ The Mildew Detector is a machine learning model designed to identify and classif
 
 The Mildew Detector addresses the practical need for an automated and efficient solution in agriculture, enhancing the diagnosis of plant diseases and contributing to effective crop management.
 
-[!Mockup](../assets/mockup.png)
+[!Mockup](/assets/mockup.png)
 
 # Dataset Content
 
@@ -131,7 +131,7 @@ By aligning these data visualization and machine learning tasks with the identif
 
 1. **Accuracy Target:**
 
-   - Achieve 97% accuracy or above on the model's test set.
+   - Achieve 95% accuracy or above on the model's test set.
 
 2. **Diagnostic Enhancement:**
    - Provide a faster and more reliable diagnostic tool.
@@ -176,14 +176,62 @@ By aligning these data visualization and machine learning tasks with the identif
 
 - MildewCherryLeavesCLF aims to enhance efficiency and accuracy in diagnosing powdery mildew. Streamlining diagnostics for Farmy & Foods and paving the way for scalable solutions across diverse crops.
 
-## Dashboard Design
+# Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+I designed a comprehensive dashboard app using Streamlit to showcase various aspects of the project, including its hypothesis, summary, visualizer, detector, and machine learning model performance. The dashboard features a simple and user-friendly interface with a sidebar containing checkboxes for easy navigation to different pages within the application.
+
+The project pages are structured as follows:
+
+## Page 1: Quick Project Summary
+
+**Summary**
+
+Powdery mildew, caused by Podosphaera clandestina, impacts cherry trees, resulting in white powdery spots on leaves and stems, especially lower leaves. Flourishing in high humidity and moderate temperatures, it poses a threat to plants, causing significant damage and reducing harvest yields. The project addresses two business requirements:
+
+1. The client seeks a study to visually differentiate between a healthy cherry leaf and one with powdery mildew.
+2. The client is interested in predicting whether a cherry leaf is healthy or contains powdery mildew.
+
+## Page 2: Leaf Visualizer
+
+**Business requirement 1:**
+
+The client aims to visually differentiate between a healthy cherry leaf and one with powdery mildew. Three functions are provided with checkboxes:
+
+1. **Difference between average and variability image:**
+
+   - Displays info text along with average and variability images.
+
+2. **Differences between average powdery mildew and average healthy leaves:**
+
+   - Shows info text along with average powdery and healthy leaf images.
+
+3. **Image Montage:**
+   - A drop-down menu for labels (healthy and powdery).
+   - A button to create an image montage with one of the labels.
+
+## Page 3: Mildew Detection
+
+**Business requirement 2:**
+
+The client seeks to visually differentiate if a given leaf contains mildew or not. Users can upload an image to validate its health status. The interface promptly displays the uploaded image along with a statement predicting the leaf's health status, providing a probability prediction and an analysis report available for download via a link labeled 'Download Report.'
+
+## Page 4: Project Hypothesis and Validation
+
+The page outlines the project's hypothesis, emphasizing that leaves infected by powdery mildew exhibit distinct visible markings. A trained machine learning model, with an accuracy of 95%, validates this distinction by comparing healthy and powdery mildew-infected cherry leaves.
+
+## Page 5: ML Performance Metrics
+
+A bar plot visualizes the distribution of two labels across three sets: Train, Validation, and Test. The dataset contains 2104 healthy leaves and 2104 infected leaves, split into training, validation, and test sets. Model history graphs, including training accuracy and losses, showcase the general performance on the test set.
+
+# Bugs
+
+1. I addressed a bug related to the PIL image attribute, switching from ANTIALIAS to LANCZOS in the resize_input_image function in the predictive_analysis.py file due to the removal of ANTIALIAS in the latest version of Pillow.
+2. Additionally, I manually adjusted the stack from -22 to -20 before deploying to Heroku to support the correct Python version.
+3. Removed and structured errors and typos.
 
 ## Unfixed Bugs
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+None.
 
 ## Deployment
 
@@ -272,19 +320,15 @@ Python
 
 ## Credits
 
+A lot of the code has been used from the Malaria Detector Walkthrough - some of it have been modified.
+
 - [The Malaria Detector Walkthrough - Code Institute](https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/)
 - [Mildew Detection by Albin Hall](https://github.com/AlbinHall/mildew-detection)
 - [Mildew Detection by ssreelakshmi8](https://github.com/ssreelakshmi88/mildew-detection-cherry-leaves_milestonePP5)
 - [Mildew Detection by olleholmgren 9](https://github.com/olleholmgren/mildew-detection)
 - [Mildew Detection by Eric Jones](https://github.com/ericjonesdev/milestone-project-cherry-leaves-mildew-detection/)
 
-### Content
-
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
-
-### Media
+### Content & Media
 
 - The dataset is taken from [Kaggle](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves/code)
 - The template being used is generated from [Code Institute](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves)
